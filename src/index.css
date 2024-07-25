@@ -54,21 +54,8 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-
 nav {
+  background-color: #242424;
   width: 100%;
   padding: 10px;
   /* margin: 0px auto; */
@@ -105,8 +92,9 @@ li {
 }
 
 .card {
-  padding: 2em;
-  margin: 30px;
+  width: 200px;
+  padding: 1em;
+  margin: 1em;
 }
 
 .card-grid {
@@ -115,4 +103,34 @@ li {
   flex-wrap: wrap;
   /* justify-content: space-between; */
   /* word-wrap: break-word; */
+}
+
+#skills {
+  text-align: center;
+  width: 100%;
+  padding-left: 15px;
+  margin: auto;
+}
+
+#list {
+  background-color: #000000;
+  width: 300px;
+  padding: 1em;
+  margin: 3em;
+  /* border: 1px white solid; */
+  border-radius: 10px;
+  box-shadow: -4px 4px 4px #333;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }
