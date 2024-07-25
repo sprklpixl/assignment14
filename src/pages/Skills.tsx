@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
             <li>Visual Studio Code</li>
             <li>Git</li>
             <li>Docker</li>
-            <li>Oracle Virtual Box</li>
+            <li>Oracle VM VirtualBox</li>
             <li>WinSCP</li>
             <li>PostgreSQL</li>
             <li>MySQL Manager Lite</li>
