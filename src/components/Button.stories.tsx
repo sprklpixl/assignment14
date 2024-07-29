@@ -19,7 +19,7 @@ Default.args = {
 Default.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
   const button = canvas.getByText('Submit') as HTMLElement;
-  await userEvent.click(button);
+  await userEvent.click(button); //all components
   await expect(button).toHaveTextContent('Submit');
 };
 
