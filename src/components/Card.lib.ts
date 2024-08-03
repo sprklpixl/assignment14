@@ -1,5 +1,5 @@
 import { within, userEvent } from '@storybook/testing-library';
-import { expect } from '@storybook/jest';
+// import { expect } from '@storybook/jest';
 
 export const cardInteractions = async (canvasElement: HTMLElement) => {
   const canvas = within(canvasElement);

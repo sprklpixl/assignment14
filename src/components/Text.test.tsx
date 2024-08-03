@@ -1,5 +1,5 @@
 import { within } from '@storybook/testing-library';
-import { expect } from '@storybook/jest';
+//import { expect } from '@storybook/jest';
 
 export const textInteractions = async (canvasElement: HTMLElement) => {
   const canvas = within(canvasElement);
