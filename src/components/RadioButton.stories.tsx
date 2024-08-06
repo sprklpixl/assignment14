@@ -1,5 +1,6 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
+import { within, userEvent, expect } from '@storybook/test';
 import RadioButton, { RadioButtonProps } from './RadioButton';
 
 export default {
@@ -18,6 +19,13 @@ Default.args = {
   //onChange: () => alert('Radio button clicked!'),
   disabled: false,
 };
+
+Default.play = async ({canvasElement}) => {
+  const canvas = within(canvasElement);
+  const radioButton = canvas.getByRole('radio');
+  await userEvent.click(radioButton);
+  await expect(radioButton).toBeChecked();
+}
 
 export const Disabled = Template.bind({});
 Default.args = {
