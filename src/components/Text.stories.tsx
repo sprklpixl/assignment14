@@ -24,16 +24,16 @@ Hover.args = {
 
 Hover.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
-  const text = canvas.getByText('Hover Effect Test').parentElement as HTMLElement;
+  const text = canvas.getByText('Hovering').parentElement as HTMLElement;
 
   if (text) {
     // Simulate hover
     await userEvent.hover(text);
-    //await expect(card).toHaveStyle('transform: scale(1.05)');
+    //await expect(text).toHaveStyle('transform: scale(1.05)');
 
     // Simulate mouse out
     await userEvent.unhover(text);
-    //await expect(card).toHaveStyle('transform: scale(1)');
+    //await expect(text).toHaveStyle('transform: none');
   } else {
     throw new Error('Text element not found');
   }
